@@ -1,0 +1,172 @@
+body {
+    width: 83%;
+    margin: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-box-shadow: -2px -2px 29px -4px rgba(0, 0, 0, 0.3);
+    box-shadow: -2px -2px 29px -4px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 1364px) {
+    body {
+        width: 100%;
+    }
+}
+
+.logo {
+    width: 200px;
+    padding: 10px;
+    height: 100px;
+    display: flex;
+    margin: auto;
+}
+
+#contFATHER {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+#contSup {
+    flex-direction: column;
+    width: 90%;
+}
+
+    .cont-1 {
+        display: flex;
+        flex-grow: 1; 
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .cont-2 {
+        display: flex;
+        flex-grow: 1;
+    }
+
+
+#txtSup {
+    justify-content: center;
+    text-align: center;
+}
+
+#buscadorBox {
+    display: flex;
+    justify-content: center;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#contact a {
+    text-decoration: none;
+}
+
+.nav-1 {
+    display: flex;
+}
+
+.nav-1 ul li {
+    list-style: none;
+    padding: 12px 0;
+    margin-left: 40px;
+    float: left;
+    position:relative;
+}
+
+.nav-1 ul li a {
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 500 ;
+    text-transform: uppercase;
+}
+
+.nav-1 ul li a::before {
+    display: block;
+    content: '';
+    width: 0%;
+    background: #ff7300;
+    height: 7px;
+    bottom: -16px;
+    position: absolute;
+    transition: width 0.2s;
+}
+
+.nav-1 ul li a:hover::before {
+    width: 100%;
+    bottom: -16px
+}
+
+.nav-1 ul .active a::before {
+    width: 100%;
+    bottom: -16px
+}
+
+.nav-1 ul  a::before {
+    display: block;
+    content: '';
+    width: 0%;
+    background: #ff7300;
+    height: 7px;
+    bottom: 0;
+    position: absolute;
+}
+
+.nav-2 {
+    background-color: rgb(0, 118, 165);
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+}
+
+.nav-2 ul li {
+    list-style: none;
+    margin-left: 30px;
+    padding: 12px 0;
+    float: left;
+    position: relative;
+}
+
+.nav-2 ul li a {
+    color:white;
+    text-decoration: none;
+    font-weight: 500 ;
+    text-transform: uppercase;
+}
+
+.slider {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;  
+    padding: 0;
+    animation: cambio 20s infinite alternate linear;
+    width: 400%;
+}
+
+.slider ul li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes cambio{
+    0%{margin-left: 0;}
+    0%{margin-left: 0;}
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
